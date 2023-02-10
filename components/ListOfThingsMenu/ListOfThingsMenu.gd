@@ -13,7 +13,7 @@ func _ready() -> void:
 
 
 func _on_new_thing_button_pressed() -> void:
-	if new_key.text.length() == 0 or new_value.text.length() == 0:
+	if new_key.text.empty() or new_value.text.empty():
 		return
 
 	var new_thing := THING.instance()
