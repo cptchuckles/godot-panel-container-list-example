@@ -19,6 +19,7 @@ func _on_new_thing_button_pressed() -> void:
 	var new_thing := THING.instance()
 	new_thing.key = new_key.text
 	new_thing.value = new_value.text
-	new_key.text = ""
-	new_value.text = ""
 	things_list.add_child(new_thing)
+
+	new_key.clear()
+	new_value.clear()
